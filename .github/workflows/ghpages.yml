@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # клонируем репозиторий на виртуальную машину
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
       # ставим нужный SDK (можно использовать и более старые)
     - name: Setup .NET 6
@@ -24,7 +24,7 @@ jobs:
       run: dotnet publish BlazorGitHubPagesDemo.csproj -c Release --output release --nologo
       
     - name: Uploading files to gh-pages branch
-      uses: JamesIves/github-pages-deploy-action@4.1.4
+      uses: JamesIves/github-pages-deploy-action@4.3.0
       with:
         branch: gh-pages
         folder: release/wwwroot
