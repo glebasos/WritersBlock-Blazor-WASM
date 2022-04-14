@@ -1,0 +1,12 @@
+﻿@page "/"
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Index</PageTitle>
+<progress max="15" value="@Counter" style="width:100%"></progress>
+<div>
+    Количество знаков : @Text.Length
+</div>
+<div>
+    <textarea @bind=Text @oninput="HandleOnChange" style="color:rgba(@Color.RGBValue,@Color.RGBValue,@Color.RGBValue,@Color.AlphaString); font-family: Arial;font-size: 12pt;width:100%;height:100vw;text-shadow: 0 0 @(Counter + "px") rgba(100,100,100,0.1);"></textarea>
+</div>
+
