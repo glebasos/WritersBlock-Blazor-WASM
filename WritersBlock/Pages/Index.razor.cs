@@ -11,7 +11,6 @@ namespace WritersBlock.Pages
         public int Counter { get; set; }
         private ColorModel Color { get; set; } = new();
         Timer Timer { get; set; }
-
         public Index()
         {
             Counter = 0;
