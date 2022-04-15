@@ -3,7 +3,7 @@ Helps you to deal with a writer's block. (Be careful of losing your text lol)
 
 Write the text, but remember that after 15 seconds of inactivity all your work will be gone.
 
-Try here: [Writer's Block](https://writersblock-blazor-wasm.pages.dev/)
+Try here: [Writer's Block](https://writersblock-blazor-wasm.pages.dev/) (If it doesn't load - try Ctrl+F5)
 
 ###### Inspired heavily by [The Most Dangerous Writing App](https://www.squibler.io/dangerous-writing-prompt-app/)
 
