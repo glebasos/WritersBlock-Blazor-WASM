@@ -1,0 +1,179 @@
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-kz98zhi88z] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-kz98zhi88z] {
+    flex: 1;
+}
+
+.sidebar[b-kz98zhi88z] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-kz98zhi88z] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-kz98zhi88z]  a, .top-row[b-kz98zhi88z]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-kz98zhi88z]  a:hover, .top-row[b-kz98zhi88z]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-kz98zhi88z]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-kz98zhi88z] {
+        display: none;
+    }
+
+    .top-row.auth[b-kz98zhi88z] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-kz98zhi88z]  a, .top-row[b-kz98zhi88z]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-kz98zhi88z] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-kz98zhi88z] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-kz98zhi88z] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-kz98zhi88z]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-kz98zhi88z], article[b-kz98zhi88z] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* Add a black background color to the top navigation */
+.topnav[b-kz98zhi88z] {
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+
+    .topnav h1[b-kz98zhi88z] {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        margin: auto;
+        padding: 1em 1em;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /* Style the links inside the navigation bar */
+    .topnav a[b-kz98zhi88z] {
+        float: right;
+        color: #bdbdbd;
+        text-align: match-parent;
+        padding: 1em 1em;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        /* Change the color of links on hover */
+        .topnav a:hover[b-kz98zhi88z] {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-k27ye9q5ei] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-k27ye9q5ei] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-k27ye9q5ei] {
+    font-size: 1.1rem;
+}
+
+.oi[b-k27ye9q5ei] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-k27ye9q5ei] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-k27ye9q5ei] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-k27ye9q5ei] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-k27ye9q5ei]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-k27ye9q5ei]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-k27ye9q5ei]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-k27ye9q5ei] {
+        display: none;
+    }
+
+    .collapse[b-k27ye9q5ei] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
