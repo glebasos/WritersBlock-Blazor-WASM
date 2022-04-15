@@ -16,7 +16,6 @@
                     alphaString = alpha.ToString().Replace(',', '.');
                 }
         }
-
         private string alphaString;
         public string AlphaString {
             get { return alphaString; }
