@@ -32,7 +32,6 @@ namespace WritersBlock.Pages
             Counter = 0;
             this.StateHasChanged();
         }
-
         public async Task Count()
         {
             Counter++;
