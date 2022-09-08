@@ -41,7 +41,6 @@ namespace WritersBlock.Pages
             if (Counter > 15)
             {
                 Text = String.Empty;
-                Console.WriteLine("хуй");
                 Color.SetDefaultValues();
                 await JSRuntime.InvokeVoidAsync("copyClipboard");
             }
